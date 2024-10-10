@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tronco común CECyT 16</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-container h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            opacity: 0;
+            color: rgb(100, 47, 65);
+            font-size: 50px;
+            margin: 0;
+            padding: 10px;
+           
+            transition: transform 1s ease, opacity 1s ease;
+        }
+
+        .image-container:hover h1 {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .menu-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .menu-principal {
+            display: flex;
+            background-color: #72253c;
+            padding: 20px;
+            list-style: none;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-principal li {
+            position: relative;
+            margin-right: 20px;
+            display: inline-block;
+            
+        }
+
+        .menu-principal a {
+            color: white;
+            text-decoration: none;
+            padding: 25px 15px;
+            font-size: 25px;
+            background-color: #72253c;
+            transition: transform 0.5s;
+        }
+
+        .menu-principal li:hover > a {
+            transform: translateY(-10px);
+        }
+
+        .menu-principal li:hover .menu-secundario {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-secundario {
+            display: none;
+            position: absolute;
+            background-color: hwb(0 100% 0%);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s, transform 0.5s;
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+            z-index: 10;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: left;
+        }
+
+        .menu-secundario li {
+            margin: 0;
+        }
+
+        .menu-secundario a {
+            padding: 10px;
+            display: block;
+            color: #722;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            background-color: #ffffff;
+        }
+
+        .menu-secundario a:hover {
+            background-color: rgb(196, 191, 191);
+        }
+
+        /* Estilos para el texto que va debajo del menú */
+        .introduccion {
+            text-align: justify;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor de la imagen con el título -->
+<div class="image-container">
+    <img src="IMG1.jpeg" alt="Imagen de Tronco común CECyT 16">
+    <h1>Tronco común</h1>
+</div>
+
+<!-- Contenedor del menú -->
+<div class="menu-container">
+    <!-- Menú principal -->
+    <ul class="menu-principal">
+        <li><a href="PROYECTO FINAL.html">Inicio</a></li>
+        <li>
+            <a href="">Primer semestre</a>
+            <ul class="menu-secundario">
+                <li><a href="ingles1.html">Inglés I     </a></li><BR>
+                    <li><a href="Algebra.html">Álgebra      </a></li>
+                    <li><a href="HISTORIA I.Html">Historia I </a></li>
+                    <li><a href="Filosofia I.html">Filosofía I</a></li>
+                    <li><a href="Expresion I.html">Expresión Oral y Escrita I</a></li>
+                    <li><a href="OrientacionI.html">Orientación Juvenil y Profesional I</a></li>
+                    <li><a href="Desarrollo de habilidades del pensamiento.html">Desarrollo de Habilidades del Pensamiento</a></li>
+                    <li><a href="Desarrollo Personal.html">Desarrollo Personal</a></li>
+                    <li><a href="Computacion I.html">Computación I</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Segundo semestre</a>
+                <ul class="menu-secundario">
+                    <li><a href="Ingles2.html">Inglés II</a></li>
+                    <li><a href="Trigonometria.html">Geometría y Trigonometría</a></li>
+                    <li><a href="HistoriaII.html">Historia II</a></li>
+                    <li><a href="FILOSOFIAII.html">Filosofía II</a></li>
+                    <li><a href="ExpresionoralII.html">Expresión Oral y Escrita II</a></li>
+                    <li><a href="OrientacionII.html">Orientación Juvenil y Profesional II</a></li>
+                    <li><a href="Computación II.html">Computación II</a></li>
+                    <li><a href="Biologia.html">Biología</a></li>
+                    <li><a href="Tecnicasdeinvestigaciondecampo.html">Técnicas de Investigación de Campo</a></li>
+                </ul>
+        </li>
+        <li><a href="Ligas cuestionarios.pdf">Cuestionarios</a></li>
+    </ul>
+</div>
+</body>
+</html>

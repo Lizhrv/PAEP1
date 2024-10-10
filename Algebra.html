@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tronco común CECyT 16</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-container {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-container h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            opacity: 0;
+            color: rgb(100, 47, 65);
+            font-size: 50px;
+            margin: 0;
+            padding: 10px;
+           
+            transition: transform 1s ease, opacity 1s ease;
+        }
+
+        .image-container:hover h1 {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .menu-container {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .menu-principal {
+            display: flex;
+            background-color: #72253c;
+            padding: 20px;
+            list-style: none;
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .menu-principal li {
+            position: relative;
+            margin-right: 20px;
+            display: inline-block;
+            
+        }
+
+        .menu-principal a {
+            color: white;
+            text-decoration: none;
+            padding: 25px 15px;
+            font-size: 25px;
+            background-color: #72253c;
+            transition: transform 0.5s;
+        }
+
+        .menu-principal li:hover > a {
+            transform: translateY(-10px);
+        }
+
+        .menu-principal li:hover .menu-secundario {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .menu-secundario {
+            display: none;
+            position: absolute;
+            background-color: hwb(0 100% 0%);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            top: 100%;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s, transform 0.5s;
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+            z-index: 10;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: left;
+        }
+
+        .menu-secundario li {
+            margin: 0;
+        }
+
+        .menu-secundario a {
+            padding: 10px;
+            display: block;
+            color: #722;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            background-color: #ffffff;
+        }
+
+        .menu-secundario a:hover {
+            background-color: rgb(196, 191, 191);
+        }
+
+        /* Estilos para el texto que va debajo del menú */
+        .introduccion {
+            text-align: justify;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 20px;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor de la imagen con el título -->
+<div class="image-container">
+    <img src="IMG1.jpeg" alt="Imagen de Tronco común CECyT 16">
+    <h1>Tronco común</h1>
+</div>
+
+<!-- Contenedor del menú -->
+<div class="menu-container">
+    <!-- Menú principal -->
+    <ul class="menu-principal">
+        <li><a href="PROYECTO FINAL.html">Inicio</a></li>
+        <li>
+            <a href="">Primer semestre</a>
+            <ul class="menu-secundario">
+                <li><a href="ingles1.html">Inglés I     </a></li><BR>
+                    <li><a href="Algebra.html">Álgebra      </a></li>
+                    <li><a href="HISTORIA I.Html">Historia I </a></li>
+                    <li><a href="Filosofia I.html">Filosofía I</a></li>
+                    <li><a href="Expresion I.html">Expresión Oral y Escrita I</a></li>
+                    <li><a href="OrientacionI.html">Orientación Juvenil y Profesional I</a></li>
+                    <li><a href="Desarrollo de habilidades del pensamiento.html">Desarrollo de Habilidades del Pensamiento</a></li>
+                    <li><a href="Desarrollo Personal.html">Desarrollo Personal</a></li>
+                    <li><a href="Computacion I.html">Computación I</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Segundo semestre</a>
+                <ul class="menu-secundario">
+                    <li><a href="Ingles2.html">Inglés II</a></li>
+                    <li><a href="Trigonometria.html">Geometría y Trigonometría</a></li>
+                    <li><a href="HistoriaII.html">Historia II</a></li>
+                    <li><a href="FILOSOFIAII.html">Filosofía II</a></li>
+                    <li><a href="ExpresionoralII.html">Expresión Oral y Escrita II</a></li>
+                    <li><a href="OrientacionII.html">Orientación Juvenil y Profesional II</a></li>
+                    <li><a href="Computación II.html">Computación II</a></li>
+                    <li><a href="Biologia.html">Biología</a></li>
+                    <li><a href="Tecnicasdeinvestigaciondecampo.html">Técnicas de Investigación de Campo</a></li>
+                </ul>
+        </li>
+        <li><a href="Ligas cuestionarios.pdf">Cuestionarios</a></li>
+    </ul>
+</div>
+
+<!-- Texto -->
+<p class="INTRO">
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álgebra</title>
+    <style>
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #7e2e46;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform:uppercase;
+            text-shadow: 2px 2px 4px #565b5e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #7c7c7c;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #815966;
+            font-weight: bold;
+            color:#ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        tr:hover {
+            background-color: #d6cfcf;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Álgebra</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>COMPETENCIA PARTICULAR DE CADA UNIDAD DIDÁCTICA</th>
+                <th>CONTENIDO</th>
+                <TH>MANUAL DE ÁLGEBRA</TH>
+                <th>PROGRAMA DE ESTUDIOS</th>
+                
+                
+           
+              
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Unidad I <BR></td>
+              
+                
+                 
+<td><a href="https://www.youtube.com/watch?v=yiDbXvJ3y-w&t=86s">Concepto y propiedades de los números reales </a> <br>  
+                 </br>
+        <a href="https://www.youtube.com/watch?v=iD693m-dJ8o">Propiedades de las operaciones básicas</a> <br>
+                </br>
+
+                <a href="https://www.youtube.com/watch?v=QjUlkhx_gps">Mínimo como un múltiplo y máximo común divisor</a> <br></br>
+                    
+                <a href="https://www.youtube.com/watch?v=SA0VNwx21m8&list=PLeySRPnY35dFOo9gAJFVzz8akDwUfgqlb">Conceptos algebraicos</a> <br></br>
+
+                <a href="https://www.youtube.com/watch?v=a8CUEopWCN0">Productos notables y métodos de factorización</a> <br></br>
+
+                <a href="https://www.youtube.com/watch?v=RR7KsXv-g6w&list=PLeySRPnY35dFlFY4ciYidsdXWuqqKuBMC">Estructuras de fracciones algebraicas</a> <br></br>
+            
+            
+            </td>
+
+                    <TD><A href="ALGEBRA 2024.pdf">Manual</A></TD>
+                   
+            <td>
+                    <a href="Palgebra.pdf">Prorama de estudios</a></td>
+            </tr>
+
+          
+            <tr>
+                <td>Unidad II<BR></td>
+
+               
+
+               
+                    <td><a href="https://www.youtube.com/watch?v=HAeSkQH1C-I&list=PLeySRPnY35dGfEuNGbQmymhiQF4oTUIMb">Función lineal</a><br>
+                    </br>
+                        <a href="https://www.youtube.com/watch?v=FrJ-tBTpxzo&list=PLeySRPnY35dGIC7UWuH0zUDm8BtFXics9">Ecuaciones lineales </a><br>
+                        </br>
+                        <a href="https://youtu.be/z5Lx3uW2QVU">Operaciones con polinomios 1 </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=3WJl7SZ1Xdk">Operaciones con polinomios 2 </a><br><BR>
+                        <a href="https://www.youtube.com/watch?v=PiT-0TxyC70">Operaciones con polinomios 3 </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=MRu9ti95jEc">Operaciones con polinomios 4 </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=utpPDi8GnuE">Operaciones con polinomios 4.5 </a><br><br>
+
+                        <a href="https://www.youtube.com/watch?v=og3iasfvxEc">Productos notables y factorización</a><br><br>
+                        <a href="https://www.youtube.com/watch?v=gRV1H2PHG90">Factorización por factor común</a><br><br>
+                        <a href="https://www.youtube.com/watch?v=mg3xcF4DxiI">Factorización por factor común 2</a><br><br>
+                        <a href="https://www.youtube.com/watch?v=Bu7BIS1eHlI">Factorización por agrupación</a><br><br>
+                        <a href="https://www.youtube.com/watch?v=t0FMHMnFBOc">Factorización y productos notables  </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=FJCijh5FeUo">Producto de binomios sin término común </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=bElTOLL2IvM">Factorización trinomio ax+bx+c    a=1 </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=OCn2iCZN1Yg">Factorización trinomio ax+bx+c    a=1  (2) </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=hbBcZZfY54g">Binomio al cubo </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=8jvwETaSloA">Suma y resta de cubos </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=UArPO1fuOhw">Factorización por evaluación </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=P0KIQF-SmhI">Factorización por evaluación 2 </a><br><br>
+
+
+                        <a href="https://www.youtube.com/watch?v=2Fn-Tjol_dg">MCM </a><br><br>     
+                        <a href="https://www.youtube.com/watch?v=FPEuUoTPwvE">MCM de expresiones algebraicas  </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=Q4EVJQEL7mE">Simplificación de fracciones algebraicas </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=R8RCNbWLlFw">Fracciones algebraicas </a><br><br>
+                        <a href="https://www.youtube.com/watch?v=ogvavoUIrUo">Multiplicación y división de fracciones algebraicas</a><br><br>
+                        <a href="https://www.youtube.com/watch?v=kZRdxl3STpQ">Multiplicación y división de fracciones algebraicas (2) </a><br><br>
+                       
+                  </td>
+            </tr>
+            <tr>
+                <td>Unidad III<BR></td>
+
+                
+                
+            <td><a href="https://www.youtube.com/watch?v=-wsGEr_0V_I">Ecuaciones lineales </a><br><br>
+                <a href="https://www.youtube.com/watch?v=oVlNuuEd7QY">Ecuaciones lineales 2 </a><br><br>
+                <a href="https://www.youtube.com/watch?v=jaBN5nvjgro">Ecuaciones lineales 3 </a><br><br>
+                <a href="https://www.youtube.com/watch?v=ieGY9ES_Nxo">Ecuaciones lineales  4 </a><br><br>
+
+                <a href="https://www.youtube.com/watch?v=yJoV0tGwAUw">Sistemas de ecuaciones 2x2 (igualación) </a><br><br>
+                <a href="https://www.youtube.com/watch?v=0qR6-6F_77Y">Método de sustitución </a><br><br>
+                <a href="https://www.youtube.com/watch?v=RTd5SRg0itA">Método de igualación </a><br><br>
+                <a href="https://www.youtube.com/watch?v=VFi4eMBfCI0">Método por determinantes </a><br><br>
+
+
+                <a href="https://www.youtube.com/watch?v=e_eIDkw6K78">Sistema de ecuaciones 3x3 (Suma y resta) </a><br><br>
+                <a href="https://www.youtube.com/watch?v=Qo6mW0hgvtY">Sistema de ecuaciones método de sustitución </a><br><br>
+                <a href="https://www.youtube.com/watch?v=go31ds7XpOg">Sistema de ecuaciones método de  igualación</a><br><br>
+                <a href="https://www.youtube.com/watch?v=ddlrExGdf0M">Sistema de ecuaciones método de determinantes </a><br><br>
+                <a href="https://www.youtube.com/watch?v=aSfbMgydp7w&feature=youtu.be">Sistema de ecuaciones método determnantes 2</a><br></td>
+
+
+            <tr>
+                <td>Unidad IV <BR></td>
+              
+
+               <td> <a href="https://www.youtube.com/watch?v=PgyX0NNXaSc">Ecuaciones cuadráticas</a><br><BR>
+                <a href="https://www.youtube.com/watch?v=UjIyFVKgxvk">Ecuaciones cuadráticas 2</a><br><BR>
+                <a href="https://www.youtube.com/watch?v=aHioEymPnvM">Ecuaciones cuadráticas 3</a><br><BR>
+                <a href="https://www.youtube.com/watch?v=e1tELbixc_E">Intervalos </a><br><BR>
+                <a href="https://www.youtube.com/watch?v=BuZr9Kf0BcM">Fórmula general</a><br><BR>
+                <a href="https://www.youtube.com/watch?v=Bhgn3rG0VDY">Fórmula general</a><br><BR></td>
+
+                   
+
+
+          
+            </tr>
+           
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+</p>
+</body>
+</html>
